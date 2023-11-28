@@ -1,0 +1,224 @@
+#using while loop
+i=1
+while i<=4:
+    j=1
+    while j<=i:
+        print("*", end="")
+        j+=1
+    i+=1
+    print()
+#using for loop
+for i in range(1,5):
+    for j in range(0,i):
+        print("*",end="")
+    print()
+#input ascii value
+
+a="PYTHON"
+print("the ascii value of  the word,",a[5:],"is",ord(a[5:]))
+
+#for  supported triangle 
+n=int (input("enter the no of rows:"))
+
+for i in  range (1,n+1):
+    for j in range(i):
+        print("*",end="")
+    print()
+for i in  range(n):
+    for j in range (n-i):
+        print("*",end="")
+    print()
+
+#for plane triangle and a diamond....
+n=int(input("enter the no if rows"))
+
+for i in range(1,2*n+1):
+    if i<=n:
+        for j in range(n-i):
+            print(" ", end="")
+        for k in range(2*i-1):
+            print("*",end="")
+        print()
+    else:
+        
+       
+        for j in  range(i-(n)):
+            print(" ",end="")
+        for k in range((i+n-(3*(i-n))-1)):
+            print("*",end="")
+        
+        print()
+
+
+#for abcd right angle triangle
+
+n=int(input("enter the no of rows:"))
+
+a=65
+for i in range(n):
+    for j in range(i+1):
+        print(chr(a),end="")
+        a+=1
+    print()
+
+#for abcd in single lines,,,.
+n=int(input("enter the no of rows:"))
+
+a=65
+for i in range(n):
+    for j in range(i+1):
+        print(chr(a),end="")
+    print()
+    a+=1
+
+
+#alphabet triangle....
+
+n=int(input("enter the no of  rows:"))
+a=65
+for i in range(1,n+1):
+    for j in range(n-i+1):
+        print(" ",end="")
+    for j in range(2*i-1):
+        print(chr(a),end="")
+    print()
+    a+=1
+
+# Python3 code to print input in your own font
+name = input("enter the text:")
+
+# To take input from User
+
+length = len(name)
+l = ""
+
+for x in range(0, length):
+	c = name[x]
+	c = c.upper()
+	
+	if (c == "A"):
+		print("..✦✦✦✦..\n..✦....✦..\n..✦✦✦✦..", end = " ")
+		print("\n..✦....✦..\n..✦....✦..\n\n")
+		
+	elif (c == "B"):
+		print("..✦✦✦✦✦✦..\n..✦....✦..\n..✦✦✦✦✦...", end = " ")
+		print("\n..✦....✦..\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "C"):
+		print("..✦✦✦✦✦✦..\n..✦.......\n..✦.......", end = " ")
+		print("\n..✦.......\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "D"):
+		print("..✦✦✦✦✦...\n..✦....✦..\n..✦....✦..", end = " ")
+		print("\n..✦....✦..\n..✦✦✦✦✦...\n\n")
+		
+	elif (c == "E"):
+		print("..✦✦✦✦✦✦..\n..✦.......\n..✦✦✦✦✦...", end = " ")
+		print("\n..✦.......\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "F"):
+		print("..✦✦✦✦✦✦..\n..✦.......\n..✦✦✦✦✦...", end = " ")
+		print("\n..✦.......\n..✦.......\n\n")
+		
+	elif (c == "G"):
+		print("..✦✦✦✦✦✦..\n..✦.......\n..✦.✦✦✦✦..", end = " ")
+		print("\n..✦....✦..\n..✦✦✦✦✦...\n\n")
+		
+	elif (c == "H"):
+		print("..✦....✦..\n..✦....✦..\n..✦✦✦✦..", end = " ")
+		print("\n..✦....✦..\n..✦....✦..\n\n")
+		
+	elif (c == "I"):
+		print("..✦✦✦✦✦✦..\n....✦✦....\n....✦✦....", end = " ")
+		print("\n....✦✦....\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "J"):
+		print("..✦✦✦✦✦✦..\n....✦✦....\n....✦✦....", end = " ")
+		print("\n..✦.✦✦....\n..✦✦✦✦....\n\n")
+		
+	elif (c == "K"):
+		print("..✦...✦...\n..✦..✦....\n..✦✦......", end = " ")
+		print("\n..✦..✦....\n..✦...✦...\n\n")
+		
+	elif (c == "L"):
+		print("..✦.......\n..✦.......\n..✦.......", end = " ")
+		print("\n..✦.......\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "M"):
+		print("..✦....✦..\n..✦✦..✦✦..\n..✦.✦✦.✦..", end = " ")
+		print("\n..✦....✦..\n..✦....✦..\n\n")
+		
+	elif (c == "N"):
+		print("..✦....✦..\n..✦✦..✦..\n..✦.✦.✦..", end = " ")
+		print("\n..✦..✦✦..\n..✦...✦..\n\n")
+		
+	elif (c == "O"):
+		print("..✦✦✦✦..\n..✦....✦..\n..✦....✦..", end = " ")
+		print("\n..✦....✦..\n..✦✦✦✦..\n\n")
+		
+	elif (c == "P"):
+		print("..✦✦✦✦✦✦..\n..✦....✦..\n..✦✦✦✦✦✦..", end = " ")
+		print("\n..✦.......\n..✦.......\n\n")
+		
+	elif (c == "Q"):
+		print("..✦✦✦✦✦✦..\n..✦....✦..\n..✦.✦..✦..", end = " ")
+		print("\n..✦..✦.✦..\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "R"):
+		print("..✦✦✦✦✦✦..\n..✦....✦..\n..✦.✦✦...", end = " ")
+		print("\n..✦...✦...\n..✦....✦..\n\n")
+		
+	elif (c == "S"):
+		print("..✦✦✦✦✦✦..\n..✦.......\n..✦✦✦✦✦✦..", end = " ")
+		print("\n.......✦..\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == "T"):
+		print("..✦✦✦✦..\n....✦✦....\n....✦✦....", end = " ")
+		print("\n....✦✦....\n....✦✦....\n\n")
+		
+	elif (c == "U"):
+		print("..✦....✦..\n..✦....✦..\n..✦....✦..", end = " ")
+		print("\n..✦....✦..\n..✦✦✦✦..\n\n")
+		
+	elif (c == "V"):
+		print("..✦....✦..\n..✦....✦..\n..✦....✦..", end = " ")
+		print("\n...✦..✦...\n....✦✦....\n\n")
+		
+	elif (c == "W"):
+		print("..✦....✦..\n..✦....✦..\n..✦.✦✦.✦..", end = " ")
+		print("\n..✦✦..✦✦..\n..✦....✦..\n\n")
+		
+	elif (c == "X"):
+		print("..✦....✦..\n...✦..✦...\n....✦✦....", end = " ")
+		print("\n...✦..✦...\n..✦....✦..\n\n")
+		
+	elif (c == "Y"):
+		print("..✦....✦..\n...✦..✦...\n....✦✦....", end = " ")
+		print("\n....✦✦....\n....✦✦....\n\n")
+		
+	elif (c == "Z"):
+		print("..✦✦✦✦✦✦..\n......✦...\n.....✦....", end = " ")
+		print("\n....✦.....\n..✦✦✦✦✦✦..\n\n")
+		
+	elif (c == " "):
+		print("..........\n..........\n..........", end = " ")
+		print("\n..........\n\n")
+		
+	elif (c == "."):
+		print("----..----\n\n")
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
